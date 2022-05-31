@@ -1,0 +1,82 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "1f439146232b62470d211c9188e87aa1",
+    "entities": [
+      {
+        "tableName": "EventTable",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `course_name` TEXT NOT NULL, `exam_name` TEXT NOT NULL, `exam_desc` TEXT, `exam_date` TEXT NOT NULL, `first_retake_date` TEXT, `exam_time` TEXT NOT NULL, `first_retake_time` TEXT, `sources` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "courseName",
+            "columnName": "course_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "examName",
+            "columnName": "exam_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "examDesc",
+            "columnName": "exam_desc",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "examDate",
+            "columnName": "exam_date",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "firstRetakeDate",
+            "columnName": "first_retake_date",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "examTime",
+            "columnName": "exam_time",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "firstRetakeTime",
+            "columnName": "first_retake_time",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sources",
+            "columnName": "sources",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1f439146232b62470d211c9188e87aa1')"
+    ]
+  }
+}

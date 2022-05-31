@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">StudIn</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">StudIn</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_smthMore">Empty</string>
+
+    <string name="menu_addnewevent">Add new event</string>
+    <string name="menu_existingevent">Event</string>
+    <string name="menu_editevent">Edit event</string>
+    <string name="menu_exportdata">Export data</string>
+    <string name="menu_camera">Camera</string>
+
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+
+    <string-array name="calendar_array">
+        <item></item>
+        <item>All</item>
+        <item>Month</item>
+        <item>Week</item>
+        <item>Day</item>
+    </string-array>
+</resources>

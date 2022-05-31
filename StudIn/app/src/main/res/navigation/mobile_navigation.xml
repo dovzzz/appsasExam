@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.studin.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.studin.ui.settingsLogic.SettingsFragment"
+        android:label="@string/menu_settings"
+        tools:layout="@layout/fragment_settings" />
+
+    <fragment
+        android:id="@+id/nav_addNewEvent"
+        android:name="com.example.studin.ui.addNewEvent.AddNewEventFragment"
+        android:label="@string/menu_addnewevent"
+        tools:layout="@layout/fragment_addnewevent" />
+
+    <fragment
+        android:id="@+id/nav_existingEvent"
+        android:name="com.example.studin.ui.existingEvent.ExistingEventFragment"
+        android:label="@string/menu_existingevent"
+        tools:layout="@layout/fragment_existingevent" />
+
+    <fragment
+        android:id="@+id/nav_editEvent"
+        android:name="com.example.studin.ui.existingEvent.EditEventFragment"
+        android:label="@string/menu_editevent"
+        tools:layout="@layout/fragment_editevent" />
+
+    <fragment
+        android:id="@+id/nav_exportData"
+        android:name="com.example.studin.ui.exportData.exportDataFragment"
+        android:label="@string/menu_exportdata"
+        tools:layout="@layout/fragment_exportdata" />
+
+    <fragment
+        android:id="@+id/nav_camera"
+        android:name="com.example.studin.ui.androidCameraScanner.cameraFragment"
+        android:label="@string/menu_camera"
+        tools:layout="@layout/fragment_camera"/>
+
+</navigation>
